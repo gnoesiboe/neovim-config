@@ -10,6 +10,9 @@ return {
 
             -- Accept current selection with ENTER, but ensure no additional new line is added afterwards
             ["<CR>"] = { "accept", "fallback" },
+
+            -- When pressing escape, close autocomplete widget without accepting
+            ["<Esc>"] = { "cancel", "fallback" },
         },
     },
 }

@@ -4,8 +4,7 @@ return {
         opts = function(_, opts)
             -- Helper to get the root/project folder name
             local function project_name()
-                local root = vim.fn.getcwd()
-                return vim.fn.fnamemodify(root, ":t")
+                return vim.fn.fnamemodify(LazyVim.root(), ":t")
             end
 
             -- Don't show current branch
