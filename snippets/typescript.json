@@ -1,0 +1,51 @@
+{
+  "Console log": {
+    "prefix": "cl",
+    "body": ["console.log($1);", "$0"],
+    "description": "Log output to console"
+  },
+  "Console dir": {
+    "prefix": "cd",
+    "body": [
+      "console.dir($1, {",
+      "    depth: null,",
+      "    colors: true,",
+      "    compact: false,",
+      "});",
+      "$0"
+    ],
+    "description": "Log output to console"
+  },
+  "Console.log with utils.inspect": {
+    "prefix": "clu",
+    "body": [
+      "console.log('$1', require('util').inspect($2, false, null));",
+      "$0"
+    ]
+  },
+  "Jest Describe": {
+    "prefix": "descr",
+    "body": ["describe('$1', () => {", "    $0 // @todo", "});"],
+    "description": "Creates Jest describe clause"
+  },
+  "Jest it": {
+    "prefix": "it",
+    "body": ["it('$1', () => {", "    $0 // @todo", "});"],
+    "description": "Generates Jest it"
+  },
+  "Jest test": {
+    "prefix": "test",
+    "body": ["test('$1', () => {", "    $0 // @todo", "});"],
+    "description": "Generates Jest test"
+  },
+  "Jest beforeEach": {
+    "prefix": "bfe",
+    "body": ["beforeEach(() => {", "    $0 // @todo", "});"],
+    "description": "Generates Jest beforeEach"
+  },
+  "Jest beforeAll": {
+    "prefix": "bfa",
+    "body": ["beforeAll(() => {", "    $0 // @todo", "});"],
+    "description": "Generates Jest beforeAll"
+  }
+}

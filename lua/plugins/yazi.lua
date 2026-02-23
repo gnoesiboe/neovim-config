@@ -1,0 +1,29 @@
+return {
+    -- Replaced Folke explorer with yazi (see https://github.com/LazyVim/LazyVim/discussions/5673#discussioncomment-12358078)
+    -- {
+    --     "mikavilpas/yazi.nvim",
+    --     keys = {
+    --         {
+    --             "<leader>e",
+    --             function()
+    --                 require("yazi").yazi()
+    --             end,
+    --             desc = "Toggle Yazi (root dir)",
+    --         },
+    --         {
+    --             "<leader>E",
+    --             function()
+    --                 require("yazi").yazi(nil, vim.fn.getcwd())
+    --             end,
+    --             desc = "Toggle Yazi (cwd)",
+    --         },
+    --     },
+    --     event = "VeryLazy",
+    --     dependencies = {
+    --         "nvim-lua/plenary.nvim",
+    --     },
+    --     opts = {
+    --         open_for_directories = false, -- LazyVIM already handles netrw replacement
+    --     },
+    -- },
+}

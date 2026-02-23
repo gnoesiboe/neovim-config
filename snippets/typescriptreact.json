@@ -1,0 +1,61 @@
+{
+  "Console log": {
+    "prefix": "cl",
+    "body": ["console.log($1);", "$0"],
+    "description": "Log output to console"
+  },
+  "Console dir": {
+    "prefix": "cd",
+    "body": [
+      "console.dir($1, {",
+      "    depth: null,",
+      "    colors: true,",
+      "    compact: false,",
+      "});",
+      "$0"
+    ],
+    "description": "Log output to console"
+  },
+  "React functional component": {
+    "prefix": "rfc",
+    "body": [
+      "import { FC } from 'react';",
+      "",
+      "type Props = {}",
+      "",
+      "export const $TM_FILENAME_BASE: FC<Props> = ($1) => {",
+      "    $0",
+      "    return (",
+      "        <div>",
+      "            <h1>@todo implement $TM_FILENAME_BASE</h1>",
+      "        </div>",
+      "    );",
+      "};"
+    ]
+  },
+  "Jest Describe": {
+    "prefix": "descr",
+    "body": ["describe('$1', () => {", "    $0 // @todo", "});"],
+    "description": "Creates Jest describe clause"
+  },
+  "Jest it": {
+    "prefix": "it",
+    "body": ["it('$1', () => {", "    $0 // @todo", "});"],
+    "description": "Generates Jest it"
+  },
+  "Jest test": {
+    "prefix": "test",
+    "body": ["test('$1', () => {", "    $0 // @todo", "});"],
+    "description": "Generates Jest test"
+  },
+  "Jest beforeEach": {
+    "prefix": "bfe",
+    "body": ["beforeEach(() => {", "    $0// @todo", "});"],
+    "description": "Generates Jest before each"
+  },
+  "Jest beforeAll": {
+    "prefix": "bfa",
+    "body": ["beforeAll(() => {", "    $0// @todo", "});"],
+    "description": "Generates Jest before all"
+  }
+}

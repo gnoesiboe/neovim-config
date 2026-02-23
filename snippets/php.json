@@ -1,0 +1,23 @@
+{
+  "New class": {
+    "prefix": "class",
+    "body": [
+      "<?php",
+      "",
+      "declare(strict_types=1);",
+      "",
+      "namespace $1",
+      "",
+      "final readonly class $2",
+      "{",
+      "    $3",
+      "}"
+    ],
+    "description": "Create PHP class scaffold"
+  },
+  "Die": {
+    "prefix": "die",
+    "body": ["die('in: ' . __FILE__ . ', on line: ' .  __LINE__);", "$1"],
+    "description": "Create die statement with reference to where it is so you can find it easily"
+  }
+}
