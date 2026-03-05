@@ -31,3 +31,7 @@ vim.keymap.set("n", "<leader>td", function()
         vim.notify("Diagnostics: errors + warnings", vim.log.levels.INFO)
     end
 end, { desc = "Toggle diagnostic severity (errors only)" })
+
+-- Always ensure that, when moving up and down, the screen stays centered around it
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
