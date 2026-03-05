@@ -7,9 +7,9 @@ return {
                 return vim.fn.fnamemodify(LazyVim.root(), ":t")
             end
 
-            -- Don't show current branch
             opts.sections.lualine_b = {
-                project_name,
+                project_name, -- Project name added
+                "branch", -- Quote out to hide current git brnach
             }
 
             -- Show full path instead of truncated one
