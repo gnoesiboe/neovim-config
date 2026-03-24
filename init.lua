@@ -6,7 +6,7 @@ require("config.lazy")
 
 -- Line numbers without relative numbering (easier to read for most people)
 vim.opt.number = true
-vim.opt.relativenumber = true
+vim.opt.relativenumber = false
 
 -- Smart case-insensitive search (lowercase = ignore case, uppercase = match case)
 vim.opt.ignorecase = true
