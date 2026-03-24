@@ -15,16 +15,16 @@ return {
             -- ["<Esc>"] = { "cancel", "fallback" },
         },
 
-        sources = {
-            default = { "lsp", "copilot", "path", "snippets", "buffer" },
-            providers = {
-                copilot = {
-                    name = "copilot",
-                    module = "blink-copilot",
-                    score_offset = -1, -- Push copilot results lower
-                    async = true,
-                },
-            },
-        },
+        -- sources = {
+        --     default = { "lsp", "copilot", "path", "snippets", "buffer" },
+        --     providers = {
+        --         copilot = {
+        --             name = "copilot",
+        --             module = "blink-copilot",
+        --             score_offset = -1, -- Push copilot results lower
+        --             async = true,
+        --         },
+        --     },
+        -- },
     },
 }
