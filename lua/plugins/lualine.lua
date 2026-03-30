@@ -9,7 +9,7 @@ return {
 
             opts.sections.lualine_b = {
                 project_name, -- Project name added
-                "branch", -- Quote out to hide current git brnach
+                --   "branch", -- Quote out to hide current git brnach
             }
 
             -- Show full path instead of truncated one
