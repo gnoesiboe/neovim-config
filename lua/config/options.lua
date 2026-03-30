@@ -19,3 +19,7 @@ vim.g.root_spec = { { ".git", "lua" }, "lsp", "cwd" }
 
 -- Disable AI inline completions as they are often really bad
 -- vim.g.ai_cmp = false
+
+-- Enable spelling check by default
+vim.opt.spell = true
+vim.opt.spelllang = { "en_us", "nl" }
