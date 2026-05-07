@@ -4,6 +4,7 @@ return {
         name = "catppuccin",
         opts = {
             flavour = "mocha", -- latte, frappe, macchiato, mocha
+            transparent_background = true,
             integrations = {
                 cmp = true,
                 gitsigns = true,
