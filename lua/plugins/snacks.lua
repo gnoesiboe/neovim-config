@@ -14,7 +14,7 @@ return {
                 explorer = {
                     -- Show explorer as modal instead of sidebar
                     -- layout = { preset = "default", preview = true },
-                    -- auto_close = true, -- 👈 closes after selecting a file
+                    auto_close = true, -- 👈 closes after selecting a file
 
                     -- Change width of explorer
                     layout = {
