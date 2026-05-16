@@ -11,6 +11,9 @@ return {
         -- },
         picker = {
             sources = {
+                grep = {
+                    layout = "ivy", -- or "telescope", "default"
+                },
                 explorer = {
                     -- Show explorer as modal instead of sidebar
                     -- layout = { preset = "default", preview = true },
@@ -23,6 +26,12 @@ return {
                             min_width = 70, -- optional: prevent it from going narrower
                         },
                     },
+                },
+            },
+
+            formatters = {
+                file = {
+                    filename_first = true, -- show filename before line content, which results in them being grouped by file
                 },
             },
         },
