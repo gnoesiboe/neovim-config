@@ -40,3 +40,6 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set({ "n", "v" }, "d", [["_d]], { noremap = true })
 vim.keymap.set({ "n", "v" }, "D", [["_D]], { noremap = true })
 vim.keymap.set("n", "dd", [["_dd]], { noremap = true })
+
+-- Write buffer and delete it in one go
+vim.keymap.set("n", "<leader>wd", "<cmd>w<cr><cmd>bd<cr>", { desc = "Write and delete buffer" })
