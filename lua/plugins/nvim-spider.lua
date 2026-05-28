@@ -8,6 +8,7 @@ return {
         { "ge", "<cmd>lua require('spider').motion('ge')<CR>", mode = { "n", "o", "x" } },
     },
     opts = {
+        -- Fixes strange behavior skipping humps of special characters
         skipInsignificantPunctuation = false,
     },
 }
