@@ -1,12 +1,11 @@
 return {
     {
         "petertriho/nvim-scrollbar",
-        config = function()
-            require("scrollbar").setup({
-                handle = {
-                    blend = 0,
-                },
-            })
-        end,
+        opts = {
+            hide_if_all_visible = true,
+            handle = {
+                blend = 50,
+            },
+        },
     },
 }
