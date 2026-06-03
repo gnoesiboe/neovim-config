@@ -1,3 +1,5 @@
-return {
-    "jeangiraldoo/codedocs.nvim",
-}
+return {}
+
+-- return {
+--     "jeangiraldoo/codedocs.nvim",
+-- }
