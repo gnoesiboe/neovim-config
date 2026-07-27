@@ -23,3 +23,9 @@ vim.g.root_spec = { { ".git", "lua" }, "lsp", "cwd" }
 -- Enable spelling check by default
 vim.opt.spell = true
 vim.opt.spelllang = { "en_us", "nl" }
+
+-- For Neovide
+vim.opt.linespace = 14
+vim.opt.guifont = "JetBrains Mono:h12"
+vim.g.neovide_opacity = 0.95
+vim.g.neovide_normal_opacity = 0.95
