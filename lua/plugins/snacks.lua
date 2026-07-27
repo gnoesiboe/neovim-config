@@ -13,6 +13,9 @@ return {
             sources = {
                 grep = {
                     layout = "ivy", -- or "telescope", "default"
+                    sort = {
+                        fields = { "file", "lnum" },
+                    },
                 },
                 explorer = {
                     -- Show explorer as modal instead of sidebar
