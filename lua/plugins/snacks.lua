@@ -26,8 +26,8 @@ return {
                     -- layout = "ivy",
                     layout = {
                         layout = {
-                            width = 70, -- set your desired width here
-                            min_width = 70, -- optional: prevent it from going narrower
+                            width = 60, -- set your desired width here
+                            min_width = 60, -- optional: prevent it from going narrower
                         },
                     },
                 },
