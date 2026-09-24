@@ -36,6 +36,7 @@ end, { desc = "Toggle diagnostic severity (errors only)" })
 vim.keymap.set({ "n", "v" }, "d", [["_d]], { noremap = true })
 vim.keymap.set({ "n", "v" }, "D", [["_D]], { noremap = true })
 vim.keymap.set("n", "dd", [["_dd]], { noremap = true })
+vim.keymap.set("n", "x", '"_x', { desc = "Delete char without yanking" })
 
 -- Write buffer and delete it in one go
 vim.keymap.set("n", "<leader>wd", "<cmd>w<cr><cmd>bd<cr>", { desc = "Write and delete buffer" })
