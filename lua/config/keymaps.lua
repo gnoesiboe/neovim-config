@@ -32,10 +32,6 @@ vim.keymap.set("n", "<leader>td", function()
     end
 end, { desc = "Toggle diagnostic severity (errors only)" })
 
--- Always ensure that, when moving up and down, the screen stays centered around it
-vim.keymap.set("n", "<C-d>", "<C-d>zz")
-vim.keymap.set("n", "<C-u>", "<C-u>zz")
-
 -- Don't but deletes in clipboard
 vim.keymap.set({ "n", "v" }, "d", [["_d]], { noremap = true })
 vim.keymap.set({ "n", "v" }, "D", [["_D]], { noremap = true })
