@@ -1,4 +1,4 @@
-// Plugin that shows code structure outline in the right sidebar with `<space> c s`
+-- Plugin that shows code structure outline in the right sidebar with `<space> c s`
 return {
     "stevearc/aerial.nvim",
     opts = {
