@@ -6,9 +6,10 @@ return {
     --     { "<leader>E", false },
     -- },
     opts = {
-        -- explorer = {
-        --     enabled = false,
-        -- },
+        -- Diable explorer in favor of yazi
+        explorer = {
+            enabled = false,
+        },
         picker = {
             sources = {
                 grep = {
