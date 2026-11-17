@@ -29,3 +29,6 @@ vim.opt.linespace = 14
 vim.opt.guifont = "JetBrains Mono:h12"
 vim.g.neovide_opacity = 0.95
 vim.g.neovide_normal_opacity = 0.95
+
+-- Prevent undo/redo between sessions for security purposes
+vim.opt.undofile = false
