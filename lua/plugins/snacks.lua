@@ -7,9 +7,9 @@ return {
     -- },
     opts = {
         -- Diable explorer in favor of yazi
-        explorer = {
-            enabled = false,
-        },
+        -- explorer = {
+        --     enabled = false,
+        -- },
         picker = {
             sources = {
                 grep = {
@@ -20,17 +20,17 @@ return {
                 },
                 explorer = {
                     -- Show explorer as modal instead of sidebar
-                    -- layout = { preset = "default", preview = true },
+                    layout = { preset = "default", preview = true },
                     auto_close = true, -- 👈 closes after selecting a file
 
                     -- Change width of explorer
                     -- layout = "ivy",
-                    layout = {
-                        layout = {
-                            width = 60, -- set your desired width here
-                            min_width = 60, -- optional: prevent it from going narrower
-                        },
-                    },
+                    -- layout = {
+                    --     layout = {
+                    --         width = 60, -- set your desired width here
+                    --         min_width = 60, -- optional: prevent it from going narrower
+                    --     },
+                    -- },
                 },
             },
 
